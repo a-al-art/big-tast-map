@@ -13,7 +13,6 @@ def show_map(ll=None, spn=None, map_type="map", add_params=None):
         params['spn'] = spn
     if add_params is not None:
         params.update(add_params)
-    print(params)
     response = requests.get(api_server, params)
 
     if not response:
